@@ -1,0 +1,178 @@
+<html>
+<head>
+<title>moon</title>
+</head>
+<body style="background-color:black;">
+<style>
+#a2
+{
+width:80%;
+height:80%;
+position:relative;
+top:0px;
+left:0px;
+}
+#a2::before
+{	content:''; 
+	width:500px; height:100px;
+	background-color:white;
+	position:absolute; top:400px; left:600px;
+	border-radius:100px 100px;
+}
+
+#a2::after
+{
+	content:'';
+	position:absolute; top:0px; left:0px;
+	width:100%; height:100%; 
+	 
+	background-image:
+		radial-gradient(circle at 180px 190px,black 40px,transparent 29px),/*moon eclipse*/
+		radial-gradient(circle at 200px 200px,white 50px,transparent 25px),/*moon*/
+		radial-gradient(circle at  300px 500px,white 2px,transparent 2px),
+		radial-gradient(circle at  300px 500px,white 2px,transparent 2px),/*star*/
+		radial-gradient(circle at  400px 100px,white 2px,transparent 2px),
+		radial-gradient(circle at  900px 600px,white 2px,transparent 2px),
+		radial-gradient(circle at  100px 500px,white 2px,transparent 2px),
+		radial-gradient(circle at  200px 300px,white 2px,transparent 2px),
+		radial-gradient(circle at  800px 700px,white 2px,transparent 2px),
+		radial-gradient(circle at  700px 200px,white 2px,transparent 2px),
+		radial-gradient(circle at  600px 100px,white 2px,transparent 2px),
+		radial-gradient(circle at  350px 950px,white 2px,transparent 2px),
+		radial-gradient(circle at  1000px 650px,white 2px,transparent 2px),
+		radial-gradient(circle at  950px 400px,white 2px,transparent 2px),/*star*/
+		radial-gradient(circle at 700px 400px,white 60px ,transparent 29px),/*cloud*/
+		radial-gradient(circle at 750px 350px,white 60px ,transparent 29px),
+		radial-gradient(circle at 830px 420px,white 60px ,transparent 29px),
+		radial-gradient(circle at 900px 350px,white 60px ,transparent 29px),
+		radial-gradient(circle at 950px 300px,white 60px ,transparent 29px),
+		radial-gradient(circle at 970px 350px,white 60px ,transparent 29px),
+		radial-gradient(circle at 1000px 430px,white 50px ,transparent 29px);
+}
+#a1{
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid blue;
+	box-shadow:
+	0px 55px 0 -0px blue,
+	0px 110px 0 -0px red;
+	position:fixed;
+	top:800px;
+	left:1400px;
+	animation-name:name1;
+	animation-duration:30s;
+	animation-delay:2s;
+}
+#a1::before
+{	content:''; 
+	border-bottom: 30px solid blue;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	height: 0;
+	width: 60px;
+	position:absolute; top:165px; left:-45px;
+	display:inline;
+}
+@keyframes name1{
+0%{
+		top:700px;
+		left:1350px;
+}	
+10%{
+		top:350px;
+		left:1050px;
+}
+20%{
+		top:250px;
+		left:950px;
+	}
+30%{
+		top:50px;
+		left:750px;
+		
+	}
+40%{
+		top:70px;
+		left:500px;
+	}
+50%{
+		top:100px;
+		left:400px;
+	}
+60%{
+		top:250px;
+		left:350px;
+		display:none;
+	}
+70%{
+		top:450px;
+		left:200px;
+		
+}
+80%
+{
+	top:600px;
+	left:100px;
+	
+}
+90%
+{
+top:750px;
+left:50px;
+}
+100%{
+top:800px;
+left:1400px;
+}
+}
+</style>
+<div id="a2"></div>
+<div id="a1">
+</div>
+<script>
+function A(){
+document.getElementById('a1').style.transform="rotate(330deg)";
+}
+setTimeout(A,2000);
+function B(){
+document.getElementById('a1').style.transform="rotate(330deg)";
+}
+setTimeout(B,4000);
+function C(){
+document.getElementById('a1').style.transform="rotate(320deg)";
+}
+setTimeout(C,6000);
+function F(){
+document.getElementById('a1').style.transform="rotate(300deg)";
+}
+setTimeout(F,8000);
+function G(){
+document.getElementById('a1').style.transform="rotate(270deg)";
+}
+setTimeout(G,10000);
+function H(){
+document.getElementById('a1').style.transform="rotate(250deg)";
+}
+setTimeout(H,12000);
+function I(){
+document.getElementById('a1').style.transform="rotate(230deg)";
+}
+setTimeout(I,14000);
+function J(){
+document.getElementById('a1').style.transform="rotate(200deg)";
+}
+setTimeout(J,16000);
+function K(){
+document.getElementById('a1').style.transform="rotate(210deg)";
+}
+setTimeout(K,18000);
+function L(){
+document.getElementById('a1').style.transform="rotate(360deg)";
+}
+setTimeout(L,29000);
+
+</script>
+</body>
+</html>
